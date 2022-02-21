@@ -843,7 +843,7 @@ top: 100px;}
 }
 
 #pricing > .sentSpReq > :last-child:hover,
-#contact-us > .container > form input[type="submit"]:hover {
+#contact > .container > form input[type="submit"]:hover {
     background-color: #fff;
     border: 1px solid var(--mainColor);
     color: var(--secColor);
@@ -941,22 +941,22 @@ top: 100px;}
     }
 }
 /* Contact Us*/
-#contact-us {
+#contact {
     padding: 60px 0;
 }
-#contact-us > .container {
+#contact > .container {
     display: flex;
     padding-top: 80px;
     color: var(--secColor);
 }
 
-#contact-us > .container > form {
+#contact > .container > form {
     display: flex;
     padding: 50px;
     flex-direction: column;
     width: 70%;
 }
-#contact-us > .container > form > input,
+#contact > .container > form > input,
 textarea {
     height: 60px;
     margin-bottom: 50px;
@@ -966,7 +966,7 @@ textarea {
     outline: none;
 }
 
-#contact-us > .container > form > input:focus,
+#contact > .container > form > input:focus,
 textarea:focus {
     color: var(--mainColor);
     border-color: var(--mainColor);
@@ -976,7 +976,7 @@ textarea {
     height: 200px;
 }
 
-#contact-us > .container > form input[type="submit"] {
+#contact > .container > form input[type="submit"] {
     width: 150px;
     font-size: 15px;
     background-color: var(--mainColor);
@@ -988,33 +988,33 @@ textarea {
     margin-left: auto;
 }
 
-#contact-us > .container > .info {
+#contact > .container > .info {
     padding: 50px;
 }
 
-#contact-us > .container > .info > section {
+#contact > .container > .info > section {
     margin-bottom: 50px;
 }
-#contact-us > .container > .info > section > h3 {
+#contact > .container > .info > section > h3 {
     text-transform: uppercase;
     font-weight: normal;
     margin-bottom: 30px;
 }
 
-#contact-us > .container > .info > section > p {
+#contact > .container > .info > section > p {
     color: var(--fontColor);
     margin-bottom: 10px;
     font-style: italic;
     font-size: 18px;
 }
 @media (max-width: 767px) {
-    #contact-us > .container {
+    #contact > .container {
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
     }
 
-    #contact-us > .container > form {
+    #contact > .container > form {
         width: 100%;
         padding: 30px 0;
     }
