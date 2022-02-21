@@ -250,13 +250,13 @@
         margin: 20px 0;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .landing{
         height: 90vh;
 
     }
     #services{
-        transform: translateY(50px);
+        transform: translateY(150px);
     }
     #services > .container > section {
         max-width: 300px;
