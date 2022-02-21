@@ -251,6 +251,13 @@
     }
 }
 @media (max-width: 400px) {
+    .landing{
+        height: 90vh;
+
+    }
+    #services{
+        transform: translateY(50px);
+    }
     #services > .container > section {
         max-width: 300px;
     }
