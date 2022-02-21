@@ -257,6 +257,7 @@
     }
     #services{
         transform: translateY(150px);
+        margin-bottom: 100px;
     }
     #services > .container > section {
         max-width: 300px;
