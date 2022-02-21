@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --mainColor: #19c8fa;
+    --secColor: #092147;
+    --whiteColor: #a2a2a2bd;
+    --fontColor: #3e4b61;
+    --transparentColor: rgb(15 116 143 / 70%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+i {
+    cursor: grab;
+    user-select: none;
+    transition: .3s;
+}
+
+i:hover {
+    color: var(--mainColor);
+}
+.searchInp {
+    padding: 10px !important;
+    border: 1px solid var(--mainColor) !important;
+    width: auto !important;
+    margin-left: 20px;
+}
+::selection {
+    background-color: var(--mainColor);
+    color: var(--secColor);
+}
+
+
+.special-head > h1 {
+    width: fit-content;
+    color: var(--secColor);
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 20px 0;
+    margin: 10px auto;
+    border-bottom: 1px solid var(--secColor);
+    position: relative;
+}
+.special-head > p{
+    margin: 50px auto;
+    text-align: center;
+    color: var(--fontColor);
+    max-width: 500px;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.special-head > h1::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--secColor);
+    border-radius: 50%;
+    bottom: -9px;
+    right: 0;
+    background-color: white;
+    animation: moveBall 5s linear infinite alternate;
+    cursor: grab;
+}
+
+@media (max-width: 550px) {
+    .special-head > h1 {
+        font-size: 35px;
+    }
+}
+
+@keyframes moveBall {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: calc(100% - 15px);
+    }
+}
+/* Media */
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

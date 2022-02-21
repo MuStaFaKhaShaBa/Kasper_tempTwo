@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font [ Outfit ]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <title>Kasper | Temp Tow</title>
+</head>
+
+<body>
+    <img src="images/arrow-up-outline.svg" class="toTop" alt="">
+
+    <div class="landing"></div>
+    <header class="head">
+        <img class="logo" src="images/logo.png" alt="Logo" />
+
+        <section class="right">
+            <i class="fas fa-bars toggle-menu"></i>
+            <ul class="links">
+                <li><a id="active" href="#Home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="search fas fa-search"></i>
+        </section>
+    </header>
+
+    <div class="body-landing">
+        <div>
+            <div class="text">
+                <h1>
+                    Hello World!<br />
+                    We Are Kasper We Make Art.
+                </h1>
+                <p>
+                    You Can Change The Wallpaper Image By Click On Next Icon On The Most
+                    Right Direction To Set The Next Wallpaper. Or Previous Icon On The
+                    Most Left Direction To Set The Previous Wallpaper.<br />
+                    Or Click On The Balls That Exist On The Bottom Direction.
+                </p>
+            </div>
+        </div>
+        <div class="next-back">
+            <i class="prev fas fa-angle-left fa-2x" onclick="ChangeBack('prev')"></i>
+            <i class="next fas fa-angle-right fa-2x" onclick="ChangeBack('next')"></i>
+        </div>
+
+        <span>
+            <span onclick="ChangeBack('0')"></span>
+            <span onclick="ChangeBack('1')"></span>
+            <span onclick="ChangeBack('2')"></span>
+        </span>
+    </div>
+
+    <section id="services">
+        <div class="special-head">
+            <h1>Services</h1>
+            <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+        </div>
+
+        <div class="container">
+            <section>
+                <i class="fas fa-desktop fa-3x"></i>
+                <div class="info">
+                    <h2>Vorem amet intuitive</h2>
+                    <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                        Curabitur aliquet quam.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <i class="fas fa-cog fa-3x"></i>
+                <div class="info">
+                    <h2>Vorem amet intuitive</h2>
+                    <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                        Curabitur aliquet quam.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <i class="fas fa-pencil-ruler fa-3x"></i>
+                <div class="info">
+                    <h2>Vorem amet intuitive</h2>
+                    <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                        Curabitur aliquet quam.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <i class="fas fa-camera fa-3x"></i>
+                <div class="info">
+                    <h2>Vorem amet intuitive</h2>
+                    <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                        Curabitur aliquet quam.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <div class="feature">
+        <div class="background"></div>
+        <div class="content">
+            <img src="images/mobile.png" alt="" class="mobile" />
+            <div class="boxText">
+                <div class="text">
+                    <h2>our Design comes with...</h2>
+                    <ul>
+                        <li>Responsive Design</li>
+                        <li>Modern And Clean Design</li>
+                        <li>Clean Code</li>
+                        <li>Browser</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="portfolio">
+        <div class="special-head">
+            <h1>portfolio</h1>
+            <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+        </div>
+
+        <ul class="types">
+            <li onclick="Botton_(0)">All</li>
+            <li onclick="Botton_(1)">App</li>
+            <li onclick="Botton_(2)">Photo</li>
+            <li onclick="Botton_(3)">Web</li>
+            <li onclick="Botton_(4)">Print</li>
+        </ul>
+        <div class="content">
+        </div>
+        <botton class="more activeType" onclick="CreateCards();">More</botton>
+    </section>
+
+    <div class="awesomeVid">
+        <video class="awesome-vid" autoplay muted loop>
+            <source src="images/awesome-video.mp4" type="video/mp4">
+            <source src="images/awesome-video.mp4" type="video/ogg">
+            Your Browser Does Not Allow Video Tag
+        </video>
+        <div class="text">
+            <h2>SUPER AWESOME VIDEO HERE</h2>
+            <p>Its All You Need</p>
+            <button class="more">SEE MORE</button>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="special-head">
+            <h1>About</h1>
+            <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+        </div>
+        <img src="images/about.png" alt="">
+    </section>
+
+    <div class="stats">
+        <div class="background"></div>
+
+        <div class="container">
+            <section>
+                <i class="fas fa-mug-hot"></i>
+                <h2>1.236</h2>
+                <p>Coffee Drinks</p>
+            </section>
+
+            <section>
+                <i class="far fa-folder"></i>
+                <h2>256</h2>
+                <p>Completed Projects</p>
+            </section>
+
+            <section>
+                <i class="far fa-envelope"></i>
+                <h2>1.743</h2>
+                <p>Mail Sent</p>
+            </section>
+
+            <section>
+                <i class="fas fa-trophy"></i>
+                <h2>17</h2>
+                <p>Awards Received</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="our-skills">
+        <div class="container">
+            <section class="testimonials">
+                <div class="text-head">
+                    <h2>TESTIMONIALS</h2>
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                        eget
+                        tincidunt.</p>
+
+                </div>
+                <div class="testimonial">
+                    <div class="testimony">
+                        <img src="images/skills-01.jpg" alt="">
+                        <div class="text">
+                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+                                elit,
+                                eget tincidunt.</p>
+                            <h4>Mostafa, CEO</h4>
+                        </div>
+                    </div>
+                    <div class="testimony">
+                        <img src="images/skills-02.jpg" alt="">
+                        <div class="text">
+                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+                                elit,
+                                eget tincidunt.</p>
+                            <h4>Khashaba, CEO</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="testimony-choose"><span></span><span class="testimony-active"></span><span></span></span>
+            </section>
+            <section class="skills">
+                <div class="text-head">
+                    <h2>SKILLS</h2>
+                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit,
+                        eget
+                        tincidunt.</p>
+                </div>
+
+                <section class="prog-hold">
+                    <h3>ADOBE</h3>
+                    <div class="bar" data-prog="90%" style="--i:90%"></div>
+                </section>
+
+                <section class="prog-hold">
+                    <h3>HTML & CSS</h3>
+                    <div class="bar" data-prog="85%" style="--i:85%">
+                    </div>
+                </section>
+
+                <section class="prog-hold">
+                    <h3>JAVASCRIPT</h3>
+                    <div class="bar" data-prog="80%" style="--i:80%"></div>
+                </section>
+
+                <section class="prog-hold">
+                    <h3>PHP</h3>
+                    <div class="bar" data-prog="90%" style="--i:90%"></div>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <div class="qoute">
+        <div class="background"></div>
+        <div class="container">
+            <q>
+                accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+            </q>
+            <h2>Mostafa Khashaba</h2>
+        </div>
+    </div>
+
+    <section id="pricing">
+        <div class="special-head">
+            <h1>PRICING</h1>
+            <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+        </div>
+
+        <div class="container">
+            <section>
+                <div class="price">
+                    <h3>BASIC</h3>
+                    <h2>
+                        <sup>$</sup>
+                        19
+                        <sub>/Mo</sub>
+                    </h2>
+                </div>
+                <div class="features-list">
+                    <p>Feature No 1</p>
+                    <p>Extra Feature</p>
+                    <p>Extra Feature No 2</p>
+                    <p>Feature</p>
+                </div>
+                <div>
+                    <botton>Buy Now</botton>
+                </div>
+            </section>
+            <section>
+                <div class="price">
+                    <h3>PREMIUM</h3>
+                    <h2>
+                        <sup>$</sup>
+                        29
+                        <sub>/Mo</sub>
+                    </h2>
+                </div>
+                <div class="features-list">
+                    <p>Feature No 1</p>
+                    <p>Extra Feature</p>
+                    <p>Extra Feature No 2</p>
+                    <p>Feature</p>
+                </div>
+                <div>
+                    <botton>Buy Now</botton>
+                </div>
+            </section>
+            <section>
+                <div class="price">
+                    <h3>PRO</h3>
+                    <h2>
+                        <sup>$</sup>
+                        39
+                        <sub>/Mo</sub>
+                    </h2>
+                </div>
+                <div class="features-list">
+                    <p>Feature No 1</p>
+                    <p>Extra Feature</p>
+                    <p>Extra Feature No 2</p>
+                    <p>Feature</p>
+                </div>
+                <div>
+                    <botton>Buy Now</botton>
+                </div>
+            </section>
+            <section>
+                <div class="price">
+                    <h3>PLATINUM</h3>
+                    <h2>
+                        <sup>$</sup>
+                        49
+                        <sub>/Mo</sub>
+                    </h2>
+                </div>
+                <div class="features-list">
+                    <p>Feature No 1</p>
+                    <p>Extra Feature</p>
+                    <p>Extra Feature No 2</p>
+                    <p>Feature</p>
+                </div>
+                <div>
+                    <botton>Buy Now</botton>
+                </div>
+            </section>
+        </div>
+
+        <div class="sentSpReq">
+            <p>Contact us if you have special request</p>
+            <botton class="contact">
+                Contact Us
+            </botton>
+        </div>
+    </section>
+
+    <div class="subscribe">
+        <div class="container">
+            <section class="formEmail">
+                <input type="email" name="Email" id="">
+                <i class="far fa-envelope fa-lg"></i>
+                <input type="submit" value="SUBSCRIBE">
+            </section>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit aliquet elit, eget
+                tincidunt.</p>
+        </div>
+    </div>
+
+    <section id="contact-us">
+        <div class="special-head">
+            <h1>Contact us</h1>
+            <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+        </div>
+        <div class="container">
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email">
+                <textarea name=""placeholder="Your Message"></textarea>
+                <input type="submit" value="SENT MESSAGE">
+            </form>
+            <div class="info">
+                <section>
+                    <h3>get in touch</h3>
+                    <p>+00 123.456.789</p>
+                    <p>+00 123.456.789</p>
+                </section>
+                <section>
+                    <h3>where we are</h3>
+                    <p>Awesome Address 17</p>
+                    <p>New York, NYC</p>
+                    <p>123-4567-890</p>
+                    <p>USA</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="images/logo.png" alt="Logo">
+            <h2>WE ARE IN SOCIAL</h2>
+            <div>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-home"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <p>&copy; 2020 <span>Kasper</span> All Right Reserved</p>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
